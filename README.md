@@ -28,7 +28,7 @@ And really interesting at n=64000; note the recurring patterns and the presence 
 The Sieve of Eratosthenes is a simple and elegant way to *understand* the distribution of primes, but it's not a great way to *find* the primes! The Time Complexity of this algorithm is O(n log log n), which is pretty bad. It's memory management is even worse as it has to keep the entire array in memory and search through it for every operation. Thus this version in Processing may look pretty but it's far from efficient. It also tends to break if you set n above 64,000.
 
 ## The Code
-```
+```Processing
 int n = 400; // Define the range of numbers to check for primes
 boolean[] isPrime; // This array will be used to keep track of prime numbers
 int currentNumber = 2; // This will keep track of the current number being evaluated
