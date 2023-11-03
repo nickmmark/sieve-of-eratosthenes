@@ -1,8 +1,8 @@
 # sieve-of-eratosthenes
-graphical display of the sieve of Eratosthenes, an ancient but effective method to find primes
+graphical display of the sieve of Eratosthenes, an ancient but visually compelling method to find primes
 
 <img src="https://github.com/nickmmark/sieve-of-eratosthenes/blob/main/Sieve_40000.gif">
-Graphical display highlighting the primes in the first n=64,000 numbers
+Graphical display highlighting the primes in the first n=40,000 numbers
 
 ## Context
 I'm hardly a mathematician but it's obvious to even me that there is something mysterious and wonderful about prime numbers. One elegant way to see this for yourself is using an ancient technique called the Sieve of Eratosthenes. It is named for the 3rd century BCE mathematician, Eratosthenes of Cyrene (Greek: Ἐρατοσθένης) (276-195/194 BCE).
@@ -20,7 +20,7 @@ We can see how it works for the first n=400 numbers
 Interesting patterns start to emerge with a larger n=10000
 <img src ="https://github.com/nickmmark/sieve-of-eratosthenes/blob/main/Sieve_10000.gif">
 
-And really interesting at n=64000; note the recurring patterns and the presence of [twin primes](https://en.wikipedia.org/wiki/Twin_prime)
+And really interesting at n=64000; note the recurring patterns and the conspicuous presence of [twin primes](https://en.wikipedia.org/wiki/Twin_prime) and the [decreasing density of primes with larger numnbers](https://en.wikipedia.org/wiki/Prime_number_theorem)
 <img src="https://github.com/nickmmark/sieve-of-eratosthenes/blob/main/Sieve_64000.gif">
 
 
