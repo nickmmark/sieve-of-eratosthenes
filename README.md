@@ -1,7 +1,7 @@
 # sieve-of-eratosthenes
 graphical display of the sieve of Eratosthenes, an ancient but effective method to find primes
 
-<img src="https://github.com/nickmmark/sieve-of-eratosthenes/blob/main/Sieve_64000.gif">
+<img src="https://github.com/nickmmark/sieve-of-eratosthenes/blob/main/Sieve_40000.gif">
 Graphical display highlighting the primes in the first n=64,000 numbers
 
 ## Context
