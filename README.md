@@ -15,19 +15,25 @@ The [approach is fairly simple](https://en.wikipedia.org/wiki/Sieve_of_Eratosthe
 5. When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.
 
 We can see how it works for the first n=400 numbers
+
 <img src="https://github.com/nickmmark/sieve-of-eratosthenes/blob/main/Sieve_400.gif">
 
 Interesting patterns start to emerge with a larger n=10000
+
 <img src ="https://github.com/nickmmark/sieve-of-eratosthenes/blob/main/Sieve_10000.gif">
 
 And really interesting at n=64000; note the recurring patterns and the conspicuous presence of [twin primes](https://en.wikipedia.org/wiki/Twin_prime) and the [decreasing density of primes with larger numnbers](https://en.wikipedia.org/wiki/Prime_number_theorem)
+
 <img src="https://github.com/nickmmark/sieve-of-eratosthenes/blob/main/Sieve_64000.gif">
 
 
 ## Some notes
 The Sieve of Eratosthenes is a simple and elegant way to *understand* the distribution of primes, but it's not a great way to *find* the primes! The Time Complexity of this algorithm is O(n log log n), which is pretty bad. It's memory management is even worse as it has to keep the entire array in memory and search through it for every operation. Thus this version in Processing may look pretty but it's far from efficient. It also tends to break if you set n above 64,000.
 
+There are, of course, better ways to build this algorithm. A [segmented sieve](https://www.geeksforgeeks.org/segmented-sieve/) lets us simplify the search somewhat by breaking the entire range 2-n into groups. Only part of the sieve need be held in memory at a time. An opportunity to improve in the future perhaps.
+
 ## The Code
+
 ```Processing
 int n = 400; // Define the range of numbers to check for primes
 boolean[] isPrime; // This array will be used to keep track of prime numbers
