@@ -29,14 +29,15 @@ And really interesting at n=64000; note the recurring patterns and the conspicuo
 # Ulam's Spiral
 Another beautiful visualization is Ulam's spiral, created by the Manhatten project physicist/mathematician Stanisław Ulam (1909 – 1984 CE). This creates a spiral by writing the positive integers in a square lattice, removing the non-primes. The resulting diagonal lines highlight an interesting pattern of recurring primes that share a common polynomial structure. Elegant.
 
-
+<img src="https://github.com/nickmmark/sieve-of-eratosthenes/blob/main/Ulam_spiral_animated_64000.gif">
+Ulam's spiral of prime number up to n=89,989
 
 ## Some notes
 The Sieve of Eratosthenes is a simple and elegant way to *understand* the distribution of primes, but it's not a great way to *find* the primes! The Time Complexity of this algorithm is O(n log log n), which is pretty bad. It's memory management is even worse as it has to keep the entire array in memory and search through it for every operation. Thus this version in Processing may look pretty but it's far from efficient. It also tends to break if you set n above 64,000.
 
 There are, of course, better ways to build this algorithm. A [segmented sieve](https://www.geeksforgeeks.org/segmented-sieve/) lets us simplify the search somewhat by breaking the entire range 2-n into groups. Only part of the sieve need be held in memory at a time. An opportunity to improve in the future perhaps.
 
-## The Code
+## The Code for The Sieve
 Everything is implemented in Processing, which is a pretty straightforward way to do simple graphics and animations. Memory management is harder so I just didn't do any! The result is code that's relatively inefficient and that crashes if you set the n > 2^16 (>65536). 
 
 ```Processing
